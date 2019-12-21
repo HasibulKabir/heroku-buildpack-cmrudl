@@ -14,8 +14,8 @@ cd $VENDOR_DIR
 mkdir -p cmrudl.py
 cd cmrudl.py
 curl -O --silent $DOWNLOAD_URL
+chmod +x cmrudl.py
 PROFILE_PATH="$BUILD_DIR/.profile.d/cmrudl.py.sh"
 mkdir -p $(dirname $PROFILE_PATH)
-chmod +x /app/vendor/cmrudl.py/cmrudl.py
 echo 'export PATH="$PATH:${HOME}/vendor/cmrudl.py"' >> $PROFILE_PATH
 echo "-----> Done."
